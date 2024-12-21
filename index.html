@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <font color="#fffff"></font>
+    <title>كلية التربية النوعية - جامعة عين شمس</title>
+    <style>
+        /* التنسيق العام */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            direction: rtl;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #3B1C32;
+            color: white;
+            padding: 1rem 0;
+            font-size: .95rem;
+        }
+
+        header img {
+            width: 300px;   
+            height: 260px;
+        }
+
+        nav {
+            margin: 2rem auto;
+        }
+
+        .circle-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            list-style: none;
+            padding: 0;
+        }
+
+        .circle-nav li a {
+            display: block;
+            width: 120px;
+            height: 120px;
+            background-color: #ddd;
+            border-radius: 50%;
+            line-height: 120px;
+            text-decoration: none;
+            color: #333;
+            transition: background-color 0.2s ease, transform 0.5s ease;
+        }
+
+        .circle-nav li a:hover {
+            background-color: #A64D79;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        section {
+            padding: 2rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+        }
+
+        /* الأزرار */
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .visible {
+            display: block;
+            margin-top: 10px;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* تصميم متجاوب */
+        @media (max-width: 768px) {
+            .circle-nav li a {
+                width: 100px;
+                height: 100px;
+                line-height: 90px;
+            }
+
+            header img {
+                width: 250px;
+                height: 200px;
+            }
+        }
+
+        html {
+            scroll-behavior: smooth; /* حركة انتقال سلسة */
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1> <font color="#fffff" size="20px">كليه التربيه النوعيه - جامعه عين شمس</font></h1>
+    <font color="#fffff" size="5px"> <p>اجعل موبايلك افقيا</p></font>
+     
+
+    <img src="photo_2024-12-20_22-53-17-removebg-preview.png" >
+    </header>
+    <nav>
+        <ul class="circle-nav">
+            <li><a href="#departments"><img src="photo_2024-12-20_21-00-37-removebg-preview.png" >الأقسام</a> </li>
+            <li><a href="#facilities"><img src="photo_2024-12-20_21-03-28-removebg-preview.png "> المرافق</a></li>
+            <li><a href="#guidelines"><img src="photo_2024-12-20_21-03-58-removebg-preview.png"> الإرشادات </a></li>
+            <li><a href="#registration"><img src="photo_2024-12-20_21-04-03-removebg-preview.png"> التسجيل </a></li>
+            <li><a href="#studysystem"><img src="photo_2024-12-21_13-13-46-removebg-preview.png"> النظام </a></li>
+            <li><a href="#map"><img src="photo_2024-12-20_21-03-52-removebg-preview.png "> الخريطة </a></li>
+            <li><a href="#success-tips"><img src="photo_2024-12-20_21-01-00-removebg-preview.png"> النصائح </a></li>
+        </ul>
+    </nav>
+    <main>
+       <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            direction: rtl;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #3B1C32;
+            color: white;
+            padding: 1rem 0;
+            font-size: .95rem;
+        }
+        
+        nav {
+            margin: 2rem auto;
+        }
+        
+        .circle-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            list-style: none;
+            padding: 0;
+        }
+        
+        .circle-nav li a {
+            display: flex;
+            justify-content: center; /* لمركزة الصورة أفقياً */
+            align-items: center; /* لمركزة الصورة عمودياً */
+            width: 100px;
+            height: 100px;
+            background-color: #ddd;
+            border-radius: 50%;
+            text-decoration: none;
+            color: #333;
+            transition: 0.5s;
+            overflow: hidden; /* لإخفاء الأجزاء الزائدة من الصورة */
+        }
+        
+        .circle-nav li a img {
+            width: 40%; /* حجم الصورة داخل الدائرة */
+            height: 40%;
+            object-fit: cover; /* لضمان تغطية الصورة */
+            border-radius: 30%; /* يجعل الصورة مستديرة */
+            transition: transform 0.5s ease, width 0.3s ease, height 0.3s ease;
+        }
+        
+        .circle-nav li a:hover img {
+            transform: scale(1.1); /* تكبير الصورة عند التحويم */
+        }
+        
+        .circle-nav li a:hover {
+            background-color: #A64D79;
+            color: white;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .circle-nav li a {
+                width: 200px;
+                height: 200px;
+            }
+        
+            .circle-nav li a img {
+                width: 50%; /* تصغير الصورة للشاشات الصغيرة */
+                height: 50%;
+            }
+        }
+        
+        html {
+            scroll-behavior: smooth; /* حركة انتقال سلسة */
+        }
+        </style>
+        
+        <section id="departments">
+        </style>
+
+            <!DOCTYPE html>
+            <html lang="ar">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>الأقسام</title>
+                <fontsize="2px"></fontsize>
+                <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        text-align: center;
+                        background-color: #f9f9f9;
+                        direction: rtl;
+                        margin: 0;
+                        padding: 0;
+                    }
+            
+                    h1 {
+                        margin: 20px 0;
+                        color: #333;
+                    }
+            
+                    .button, .section {
+                        background-color: #93335e;
+                        color: white;
+                        border: none;
+                        padding: 10px 20px;
+                        margin: 10px;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        font-size: 16px;
+                    }
+            
+                    .button:hover, .section:hover {
+                        background-color: #7a284a;
+                    }
+            
+                    .content {
+                        margin: 20px auto;
+                        padding: 15px;
+                        border: 1px solid #ccc;
+                        width: 60%;
+                        background-color: white;
+                        color: #333;
+                        border-radius: 5px;
+                        text-align: right;
+                    }
+            
+                    .content p {
+                        margin: 10px 0;
+                        line-height: 1.8;
+                    }
+            
+                    .content ul {
+                        margin: 10px 0;
+                        padding-right: 20px;
+                    }
+            
+                    .content li {
+                        margin-bottom: 8px;
+                    }
+                </style>
+            </head>
+            <body>
+                <h1>الأقسام</h1>
+                <button class="button" onclick="resetContent()">رجوع</button>
+                <div id="content" class="content">تعالوا نتعرف على اقسام كليتنا:</div>
+            
+                <!-- أزرار الأقسام -->
+                <button class="section" onclick="showSection(1)">القسم الأول</button>
+                <button class="section" onclick="showSection(2)">القسم الثاني</button>
+                <button class="section" onclick="showSection(3)">القسم الثالث</button>
+                <button class="section" onclick="showSection(4)">القسم الرابع</button>
+                <button class="section" onclick="showSection(5)">القسم الخامس</button>
+                <button class="section" onclick="showSection(6)">القسم السادس</button>
+            
+                <script>
+                    function showSection(sectionNumber) {
+                        const content = document.getElementById('content');
+                        switch (sectionNumber) {
+                            case 1:
+                                content.innerHTML = `
+<img src="photo_2024-12-20_21-00-26-removebg-preview.png" width="120px" hieght="120px" >
+                                <h2>قسم التربيه الفنيه </h2>
+                                    <h3> ايه الى هنتعلمه؟</h3>
+                                    <ul>
+                                        <li>
+أساسيات الرسم والتلوين (زي الفحم، الألوان المائية والزيتية).
+ </li>
+                                        <li>
+النحت باستخدام خامات مختلفة زي الطين، الجبس، والخشب.
+
+</li>
+                                        <li>التصميم الفني والجرافيكي.
+
+</li>
+                                           <li>تاريخ الفن ومدارسه (زي الكلاسيكية، السريالية، التكعيبية...).
+</li>
+                                              <li>الطباعة الفنية (الطباعة على القماش، الورق).
+</li>
+                                    </ul>
+                                    <h3>الدراسة ماشية أزاي؟
+</h3>
+<ul>
+<li>
+الشغل عملي، أغلب وقتك في الورش والمعامل، وفيه تقييم على الأعمال اللي بتعملها.
+</li>
+<li>
+بتتعلم كمان ازاي تدرس الفن للأطفال في المدارس.
+
+</li>
+                                    </ul>
+                                  <h3>فرص الشغل؟</h3>
+                                  <ul>  
+
+<li>مدرس تربية فنية.
+</li>
+<li>فنان حر (تصميم لوحات أو مشاريع فنية).
+</li>
+<li>
+شغل في مجال الديكور وتصميم الجرافيك.
+</li>
+</ul>
+
+`;
+                                break;
+                            case 2:
+                                content.innerHTML = `
+                                <img src="photo_2024-12-20_21-00-32-removebg-preview.png" width="120px" hieght="120px">
+                                    <h2>القسم التربيه الموسيقيه</h2>
+                              <h3>إيه اللي هتتعلمه؟</h3>
+
+                                    <ul>
+                                        <li>
+عزف على آلات موسيقية مختلفة (زي العود، البيانو، الكمان).
+</li>
+                                        <li>
+قراءة وكتابة النوتة الموسيقية.
+</li>
+                                        <li>النظريات الموسيقية وتاريخ الموسيقى الشرقية والغربية.
+</li>
+                                         <li>تدريب الصوت وأساسيات الغناء.
+</li> 
+                                    </ul>
+                                    <h3>
+الدراسة ماشية أزاي؟
+</h3>
+                                    <ul>
+                                        <li>
+فيها شغل عملي زي التدريب على العزف والغناء بشكل مستمر، مع امتحانات عملية.
+</li>
+                                        <li>
+المواد النظرية بتشمل تاريخ الموسيقى وأسس تعليمها.
+</li>
+</ul>
+<h3>فرص الشغل؟
+
+</h3>
+<ul>
+                                            <li>مدرس موسيقى في المدارس.
+</li>
+                                           <li>فنان موسيقي أو مغني.
+</li>
+                                                   <li></li>
+    </ul>
+                                        <li>شغل في التأليف والتوزيع الموسيقي.
+
+</li>
+                                `;
+                                break;
+                            case 3:
+                                content.innerHTML = `
+                                   <img src="photo_2024-12-20_21-00-48-removebg-preview.png" width="120px" hieght="120px">
+                                    <h2>القسم اعلام التربوى</h2>
+                                   <h2>أ) شعبة الصحافة:
+</h2>
+                                   <h3>
+إيه اللي هتتعلمه؟
+
+</h3>
+                                   
+                                    <ul>
+                                        <li>كتابة الأخبار والتقارير الصحفية.
+</li>
+                                        <li>التصوير الصحفي وإعداد النشرات المدرسية.
+</li>
+                                        <li>
+مهارات الإلقاء والإذاعة المدرسية.
+
+</li>
+                                    </ul>
+
+                 <h3>الدراسة ماشية أزاي؟</h3>
+                 <ul>
+                 <li>جزء عملي زي كتابة مقالات وتصوير.
+</li>
+                 <li>نظري عن أسس الصحافة والإعلام.
+</li>
+                
+                       </ul>
+                       <h3>فرص الشغل؟
+</h3>
+                       <ul>
+                        <li>العمل كمدرس إعلام مدرسي.
+</li>
+                 <li>
+شغل في مجال الصحافة والتصوير.
+</li>
+                 
+                 </ul>
+             <h2>ب) شعبة المسرح:
+
+</h2>
+             <h3>إيه اللي هتتعلمه؟
+
+</h3>
+             <ul>
+                <li>التمثيل والإخراج المسرحي.
+</li>
+                <li>كتابة النصوص المسرحية.
+</li>
+                <li>تصميم الديكور والإضاءة المسرحية.
+
+</li>
+         
+                </ul>
+   <h3>
+الدراسة ماشية أزاي؟</h3>
+             <ul>
+                <li>عملي ، زي تدريب على التمثيل وتجهيز عروض مسرحية.
+</li>
+                <li>نظري عن تاريخ المسرح وتقنياته.
+</li>
+               
+                </ul>
+   <h3>فرص الشغل؟
+</h3>
+             <ul>
+                <li>مدرس مسرح مدرسي.
+
+</li>
+                <li>ممثل أو مخرج في المسرح أو التلفزيون.
+</li>
+                </ul>
+
+
+
+                                `;
+                                break;
+                            case 4:
+                                content.innerHTML = `
+                             <img src="photo_2024-12-20_21-00-54-removebg-preview.png" width="120px" hieght="120px" >
+
+                                    <h2>القسم تكنولوجيا التعليم</h2>
+                                    <h3>إيه اللي هتتعلمه؟
+
+</h3>
+                                    <ul>
+                                        <li>صميم الوسائل التعليمية (زي الفيديوهات، البوربوينت، المواقع).
+</li>
+                                        <li>
+إنتاج وتصميم المناهج الرقمية.
+</li>
+                                        <li>
+البرمجة الأساسية وتصميم تطبيقات تعليمية.
+</li>
+                                       
+                                      <h3>
+الدراسة ماشية ازاي؟
+
+</h3>
+                                    <ul>
+                                        <li>عملي  على الكمبيوتر، زي تصميم برامج تعليمية أو إنتاج فيديوهات.
+</li>
+                                        <li>نظري عن أساليب استخدام التكنولوجيا في التدريس.
+</li>
+                                       
+                                    </ul>
+                                      <h3>فرص الشغل؟
+</h3>
+                                    <ul>
+                                        <li>
+متخصص تكنولوجيا تعليم في المدارس.
+</li>
+                                        <li>مصمم برامج أو وسائل تعليمية في الشركات.
+</li>
+                                     
+                                    </ul>
+                                `;
+                                break;
+                            case 5:
+                                content.innerHTML = `
+                                       <img src="photo_2024-12-20_21-00-42-removebg-preview.png" width="120px" hieght="120px">
+
+                                    <h2>القسم الاقتصاد المنزلى</h2>
+                                    <h3>إيه اللي هتتعلمه؟
+</h3>
+                                    <ul>
+                                        <li>
+التغذية الصحية وتحضير الوجبات.
+</li>
+                                        <li>تصميم الأزياء والخياطة.
+</li>
+                                        <li>إدارة الموارد المنزلية (زي الميزانية والتنظيم).
+</li>
+                                    </ul>
+                                      <h3>الدراسة ماشية أزاي؟
+</h3>
+                                    <ul>
+                                        <li>
+عملي زي التدريب على الخياطة أو الطبخ.
+</li>
+                                        <li>نظري عن التغذية وإدارة المنزل.
+</li>
+                                    
+                                    </ul>
+                                      <h3>فرص الشغل؟
+</h3>
+                                    <ul>
+                                        <li>مدرس اقتصاد منزلي.
+</li>
+                                        <li>شغل في تصميم الأزياء أو إدارة مشاريع منزلية.
+
+</li>
+                                      
+                                    </ul>
+                                `;
+                                break;
+                            case 6:
+                                content.innerHTML = `
+                                   <img src="photo_2024-12-21_13-13-39-removebg-preview.png" width="120px" hieght="120px" >
+
+                                    <h2>قسم التربية الخاصة ( وده أختياري لو حابب تدرسه مع قسمك الأساسي )
+  </h2>
+                                  <h3>إيه اللي هتتعلمه؟
+</h3>
+                                    <ul>
+                                        <li>طرق التعامل مع ذوي الاحتياجات الخاصة (زي أطفال التوحد، صعوبات التعلم).
+</li>
+                                        <li>تصميم برامج تعليمية تناسب حالات الإعاقة المختلفة.
+
+</li>
+                                        <li>لغة الإشارة وطرق التواصل مع الصم والبكم.
+</li>
+                                    </ul>
+                                      <h3>الدراسة ماشية أزاي؟
+</h3>
+                                    <ul>
+                                        <li>فيه شغل عملي مع الأطفال في مراكز تدريب، ونظري عن التحديات اللي بتواجههم.
+</li>
+                                       
+                                    </ul>
+                                      <h3>فرص الشغل؟
+</h3>
+                                    <ul>
+                                        <li>مدرس في مدارس التربية الخاصة.
+</li>
+                                        <li>شغل في مراكز تأهيل أو تدريب.</li>
+                                   
+                                    </ul>
+                                `;
+                                break;
+                            default:
+                                content.innerHTML = 'اضغط على أي قسم لرؤية التفاصيل الخاصة به.';
+                        }
+                    }
+            
+                    function resetContent() {
+                        const content = document.getElementById('content');
+                        content.innerHTML = 'اضغط على أي قسم لرؤية التفاصيل الخاصة به.';
+                    }
+                </script>
+            </body>
+            </html>
+            
+        </section>
+   
+             
+
+       
+      
+        <section id="facilities">
+            <h2>المرافق</h2>
+            <!DOCTYPE html>
+            <html lang="ar">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>التفاصيل</title>
+                <style>
+                    body {
+                        font-family: 'Arial', sans-serif; /* يمكنك تغيير الخط هنا */
+                        background-color: #f0f0f0;
+                        color: #A64D79;
+                        padding: 20px;
+                    }
+
+                    .details {
+                        margin-top: 20px;
+                        background-color: #ffffff;
+                        padding: 20px;
+                        border-radius: 10px;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                        transition: all 0.3s ease;
+                    }
+
+                    .details:hover {
+                        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* تأثير الظل عند التمرير */
+                    }
+
+                    h3 {
+                        font-size: 0.7cm;
+                        color: #A64D79;
+                        text-align: center;
+                        margin-bottom: 15px;
+                    }
+
+                    button {
+                        background-color: #A64D79;
+                        color: white;
+                        padding: 10px 20px;
+                        border: none;
+                        border-radius: 5px;
+                        font-size: 0.4cm;
+                        cursor: pointer;
+                        transition: background-color 0.3s ease;
+                    }
+
+                    button:hover {
+                        background-color: #870f47;
+                    }
+
+                    /* تنسيق النص التفصيلي */
+                    #detailsText {
+                        font-size: 0.4cm;
+                        line-height: 1.8;
+                        color: #555;
+                        margin-top: 20px;
+                        text-align: justify;
+                        transition: all 0.3s ease;
+                    }
+
+                    /* تأثير عند ظهور النص */
+                    #detailsText.hidden {
+                        opacity: 0;
+                        transform: translateY(20px);
+                    }
+
+                    #detailsText:not(.hidden) {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                </style>
+            </head>
+            <body>
+
+                <div class="details">
+                    <h3>التفاصيل</h3>
+                    <!-- زر التفاصيل -->
+                    <button id="detailsButton">عرض التفاصيل</button>
+
+                    <!-- النص الذي سيظهر عند الضغط على زر "تفاصيل" -->
+                    <div id="detailsText" class="hidden">
+                        <p><ul>كلية التربية النوعية بجامعة عين شمس فيها مجموعة مرافق بتساعد الطلبة في الدراسة وتنمية مهاراتهم، ودي أبرز الحاجات اللي جوة الكلية:
+                            </ul>
+                   <li>
+                    المدرجات والقاعات: الكلية فيها مدرجات كبيرة وقاعات دراسية مجهزة بشاشات وأجهزة حديثة علشان المحاضرات تبقى سهلة ومريحة.
+                       </li>
+<li>
+    مسرح طلعت حرب: ده واحد من أهم الأماكن في الكلية، بيتعمل عليه فعاليات وأنشطة فنية زي المسرحيات والعروض الموسيقية اللي بيقدمها الطلبة، خصوصًا بتوع أقسام الموسيقى والإعلام.
+                               </li>
+<li>
+    المكتبة: مكتبة الكلية مليانة كتب ومراجع بتساعد الطلبة في الدراسة والبحث العلمي، وكمان فيها خدمة استعارة الكتب.
+    </li>
+                        <li>
+                            ورش العمل: في ورش مخصصة للأقسام زي التربية الفنية (الخزف، النحت، أشغال المعادن) وكمان للحرف اليدوية زي التريكو والكروشيه.
+                            </li>
+                        <li>
+                            معامل تكنولوجيا التعليم: الكلية فيها معامل كمبيوتر وأدوات تكنولوجيا حديثة علشان الطلبة يتعلموا استخدام التكنولوجيا في التدريس.
+                            </li>
+                        <li>
+                            استوديوهات الإعلام: دي خاصة بطلبة الإعلام التربوي، وبيتمرنوا فيها على شغل الإذاعة والتلفزيون.
+                        </li>
+                        <li>
+                            قاعات الموسيقى: مخصصة لطلبة قسم الموسيقى، فيها آلات زي البيانو علشان الطلبة يتدربوا وينموا مهاراتهم.
+                        </li>
+                        <li>
+                            القصر: "القصر" هو واحد من المباني المميزة في كلية التربية النوعية. تصميمه مختلف عن باقي المباني، لأنه بيمتاز بطراز معماري فخم ويضيف لمسة من الفخامة والتميّز للكلية. المبنى ده يعتبر تاريخي وبيحتوي على قاعات ومرافق كتير بتساعد في العملية التعليمية، وبيتم استخدامه لأغراض أكاديمية وثقافية متنوعة.
+                        </li>
+                        <li>
+                            شارع الاتحاد: شارع الاتحاد هو واحد من الأماكن البارزة في محيط الكلية. في الشارع ده، الطلاب غالبًا بيتجمعوا فيه عشان يتبادلوا الأفكار أو للاسترخاء بعد المحاضرات، وكمان بيمثل مكان حيوي للنشاط الاجتماعي بين الطلاب.
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <script>
+                    const detailsButton = document.getElementById('detailsButton');
+                    const detailsText = document.getElementById('detailsText');
+
+                    // عند الضغط على زر "عرض التفاصيل"
+                    detailsButton.addEventListener('click', () => {
+                        if (detailsText.classList.contains('hidden')) {
+                            detailsText.classList.remove('hidden');
+                            detailsButton.textContent = 'إخفاء التفاصيل'; // تغيير نص الزر
+                        } else {
+                            detailsText.classList.add('hidden');
+                            detailsButton.textContent = 'عرض التفاصيل'; // إعادة النص الأصلي للزر
+                        }
+                    });
+                </script>
+
+            </body>
+            </html>
+
+        </section>
+        <section id="guidelines">
+            <h2>الإرشادات العامة</h2>
+            <!DOCTYPE html>
+            <html lang="ar">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>الإرشادات</title>
+                <style>
+                    body {
+                        font-family: 'Arial', sans-serif;
+                        background-color: #f0f0f0;
+                        color: black;
+                        padding: 20px;
+                    }
+
+                    .instructions {
+                        margin-top: 20px;
+                        background-color: #ffffff;
+                        padding: 20px;
+                        border-radius: 10px;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                        transition: all 0.3s ease;
+                    }
+
+                    .instructions:hover {
+                        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* تأثير الظل عند التمرير */
+                    }
+
+                    h3 {
+                        font-size: 1.4rem;
+                        color: black; /* اللون الأخضر للإرشادات */
+                        text-align: center;
+                        margin-bottom: 15px;
+                    }
+
+                    button {
+                        background-color: #A64D79;
+                        color: white;
+                        padding: 10px 20px;
+                        border: none;
+                        border-radius: 5px;
+                        font-size: 1.1rem;
+                        cursor: pointer;
+                        transition: background-color 0.3s ease;
+                    }
+
+                    button:hover {
+                        background-color: #45a049;
+                    }
+
+                    /* تنسيق النص التفصيلي للإرشادات */
+                    #instructionsText {
+                        font-size: 1.2rem;
+                        line-height: 1.8;
+                        color: #555;
+                        margin-top: 20px;
+                        text-align: justify;
+                        transition: all 0.3s ease;
+                    }
+
+                    /* تأثير عند ظهور النص */
+                    #instructionsText.hidden {
+                        opacity: 0;
+                        transform: translateY(20px);
+                    }
+
+                    #instructionsText:not(.hidden) {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                </style>
+            </head>
+            <body>
+
+                <div class="instructions">
+                    <h3>الإرشادات</h3>
+                    <!-- زر الإرشادات -->
+                    <button id="instructionsButton">عرض الإرشادات</button>
+
+                    <!-- النص الذي سيظهر عند الضغط على زر "الإرشادات" -->
+                    <div id="instructionsText" class="hidden">
+                        كلية التربية النوعية بجامعة عين شمس حطت شوية إرشادات وتوجيهات عشان تضمن بيئة تعليمية محترمة ومميزة للطلاب وأعضاء هيئة التدريس والإداريين. الإرشادات دي بتشمل:
+
+                        <p> 
+                <ul>
+                    <li>
+                     الالتزام بالقواعد السلوكية:
+                    الكلية بتشترط إن كل الطلبة وأعضاء هيئة التدريس يلتزموا بالسلوكيات الأخلاقية والمهنية داخل الحرم الجامعي، ويكونوا دايمًا حريصين على احترام القوانين الجامعية.
+</li>
+                    <li>
+                     استخدام التعليم الإلكتروني:
+                    الكلية بتدعم استخدام التكنولوجيا من خلال منصة "ASU2Learn"، وهي منصة بتخلي الطالب يقدر يوصل للمقررات الدراسية في أي وقت ومن أي مكان. فيه كمان برامج تفاعلية بتساعد في تحسين مستوى التعليم.
+</li>
+                    <li>
+
+                     المشاركة في الأنشطة:
+                    الكلية بتشجع الطلاب على الانخراط في الأنشطة الأكاديمية زي ورش العمل والمؤتمرات، وده زي ورش عمل توظيف التكنولوجيا لذوي الإعاقة أو الأنشطة البحثية التي بتساعد في تحسين أساليب التعلم.
+</li>
+                    <li>
+
+                    ضمان الجودة والاعتماد الأكاديمي:
+                    الكلية شغالة على تطبيق معايير الاعتماد الأكاديمي عشان تحسن من مستوى التعليم. البرامج الدراسية في الكلية معتمدة محليًا ودوليًا، والهدف هو تخريج طلاب متميزين في مجالات متنوعة زي الإعلام التربوي والموسيقى.
+</li>
+                    <li>
+                    الخدمات الإلكترونية:
+                    الكلية بتقدم خدمات إلكترونية زي تسجيل المقررات الدراسية والبحث في المكتبات الرقمية. ده بيسهل على الطلاب متابعة كل ما يخص دراستهم إلكترونيًا.
+</li>
+                    
+                </ul>
+                        </p>
+                       
+                    </div>
+                </div>
+
+                <script>
+                    const instructionsButton = document.getElementById('instructionsButton');
+                    const instructionsText = document.getElementById('instructionsText');
+
+                    // عند الضغط على زر "عرض الإرشادات"
+                    instructionsButton.addEventListener('click', () => {
+                        if (instructionsText.classList.contains('hidden')) {
+                            instructionsText.classList.remove('hidden');
+                            instructionsButton.textContent = 'إخفاء الإرشادات'; // تغيير نص الزر
+                        } else {
+                            instructionsText.classList.add('hidden');
+                            instructionsButton.textContent = 'عرض الإرشادات'; // إعادة النص الأصلي للزر
+                        }
+                    });
+                </script>
+
+            </body>
+            </html>
+
+            <section id="registration">
+            <h2>خطوات التسجيل</h2>
+                <!DOCTYPE html>
+                <html lang="ar">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>الخطوات بتفصيل</title>
+                    <style>
+                        body {
+                            font-family: 'Arial', sans-serif;
+                            background-color: #f0f0f0;
+                            color: #333;
+                            padding: 20px;
+                        }
+
+                        .steps {
+                            margin-top: 20px;
+                            background-color: #ffffff;
+                            padding: 20px;
+                            border-radius: 10px;
+                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                            transition: all 0.3s ease;
+                        }
+
+                        .steps:hover {
+                            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* تأثير الظل عند التمرير */
+                        }
+
+                        h3 {
+                            font-size: 2rem;
+                            color: #A64D79; /* اللون الجديد (#A64D79) */
+                            text-align: center;
+                            margin-bottom: 15px;
+                        }
+
+                        button {
+                            background-color: #A64D79; /* نفس اللون الجديد */
+                            color: white;
+                            padding: 10px 20px;
+                            border: none;
+                            border-radius: 5px;
+                            font-size: 1.1rem;
+                            cursor: pointer;
+                            transition: background-color 0.3s ease;
+                        }
+
+                        button:hover {
+                            background-color: #8B356C; /* درجة أغمق من اللون الجديد */
+                        }
+
+                        /* تنسيق النص التفصيلي للخطوات */
+                        #stepsText {
+                            font-size: 1.2rem;
+                            line-height: 1.8;
+                            color: #555;
+                            margin-top: 20px;
+                            text-align: justify;
+                            transition: all 0.3s ease;
+                        }
+
+                        /* تأثير عند ظهور النص */
+                        #stepsText.hidden {
+                            opacity: 0;
+                            transform: translateY(20px);
+                        }
+
+                        #stepsText:not(.hidden) {
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
+                    </style>
+                </head>
+                <body>
+
+                    <div class="steps">
+                        <h3>الخطوات بتفصيل</h3>
+                        <!-- زر الخطوات -->
+                        <button id="stepsButton">عرض الخطوات</button>
+
+                        <!-- النص الذي سيظهر عند الضغط على زر "الخطوات" -->
+                        <div id="stepsText" class="hidden">
+                            الأوراق المطلوبة للتقديم:
+
+                            <p>
+                                <ul>
+                                    <li>
+                                     أصل شهادة الثانوية العامة (مختومة بختم شعار الجمهورية) + 3 صور منها.
+
+</li>
+                                    <li>
+                                     أصل شهادة الميلاد حديثة + 3 صور منها.
+</li>
+                                    <li>
+
+                                     3 صور لبطاقة الرقم القومي للطالب.
+
+</li>
+                                    <li>
+                                     بطاقة الترشيح + 2 صورة منها.
+
+</li>
+                                    <li>
+                                     8 صور شخصية للطالب.
+
+</li>
+                                    <li>
+                                     بالنسبة للبنين، استمارة 2 جند و 6 جند مختومة بختم المعين.
+
+</li>
+                                    <li>
+                                     المصروفات الدراسية.
+</li>
+                                </ul>
+                            </p>
+                            <p>خطوات التقديم:
+<ul>
+    <li>
+     تسليم بطاقه الترشيح للأمن:
+    تروح للأمن في الكلية وتسلّمهم بطاقه الترشيح مكتوب عليها رقم القومي للطالب ورقم التليفون.
+
+</li>
+    <li>
+    الدفع في ماكينة فوري:
+    بعد ما تستلم الكود، تروح لأي ماكينة فوري وتدفع المصروفات الدراسية باستخدام الكود اللي خدته من شؤون الطلبة.
+</li>
+      <li>
+      تسليم الإيصال لشؤون الطلبة:
+      بعد ما تدفع، تروح شؤون الطلبة وتسلّمهم إيصال الدفع، هيدوك بعدها ورقة كشف طبي.
+
+</li>
+      <li>
+
+       إجراء الكشف الطبي:
+      تروح تعمل الكشف الطبي في العيادة الطبية جنب الكلية.
+</li>
+      <li>
+       صور إيصال المصاريف:
+      تصور إيصال المصاريف 4 نسخ وتحتفظ بنسخة منهم.
+</li>
+      <li>
+      ملء البيانات:
+      تملأ البيانات في الكلية مع اتحاد الطلبة.
+</li>
+      <li>
+       إتمام إجراءات اتحاد الطلبة:
+      تروح الترابيزه الثانية الخاصة باتحاد الطلبة علشان يرتبوا أوراقك.
+</li>
+      <li>
+       تسليم الدوسيه لشؤون الطلبة:
+      بعد ما ترتب كل الأوراق، تروح تسلم الدوسيه النهائي لشؤون الطلبة علشان تخلص التقديم.
+</li>
+</ul>
+ </p>
+                            <p> 
+                            ملاحظة:
+
+                            تأكد من إنك تتابع كل المواعيد المحددة علشان تضمن إنك تخلص كل خطوات التقديم صح وفي الوقت المحدد.</p>
+                            
+                        </div>
+                    </div>
+
+                    <script>
+                        const stepsButton = document.getElementById('stepsButton');
+                        const stepsText = document.getElementById('stepsText');
+
+                        // عند الضغط على زر "عرض الخطوات"
+                        stepsButton.addEventListener('click', () => {
+                            if (stepsText.classList.contains('hidden')) {
+                                stepsText.classList.remove('hidden');
+                                stepsButton.textContent = 'إخفاء الخطوات'; // تغيير نص الزر
+                            } else {
+                                stepsText.classList.add('hidden');
+                                stepsButton.textContent = 'عرض الخطوات'; // إعادة النص الأصلي للزر
+                            }
+                        });
+                    </script>
+
+                </body>
+                </html>
+            </section>
+                <section id="studysystem">
+                    <h2>نظام الدراسه</h2>
+                    <!DOCTYPE html>
+                    <html lang="ar">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>تفاصيل الدراسة</title>
+                        <style>
+                            .study-content {
+                                display: none;
+                                margin-top: 20px;
+                                padding: 20px;
+                                background-color: white; /* اللون الأبيض */
+                                border-radius: 8px; /* حواف مستديرة */
+                                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+                                border: 1px solid #ddd; /* حدود خفيفة */
+                                max-width: 600px; /* تحديد عرض المحتوى */
+                                margin-left: auto; /* وضع المحتوى في المنتصف */
+                                margin-right: auto;
+                            }
+                            .study-content p {
+                                margin-bottom: 15px;
+                                font-size: 16px; /* حجم الخط */
+                                line-height: 1.6; /* تباعد الأسطر */
+                            }
+                            button {
+                                font-size: 18px;
+                                padding: 10px 20px;
+                                border: none;
+                                background-color: #4CAF50; /* لون الخلفية */
+                                color: white;
+                                cursor: pointer;
+                                border-radius: 5px;
+                            }
+                            button:hover {
+                                background-color: #45a049; /* تغيير اللون عند المرور بالماوس */
+                            }
+                        </style>
+                    </head>
+                    <body>
+                    
+                        <button id="studyBtn">تفاصيل الدراسة</button>
+                        <div id="studyContent" class="study-content">
+                            <p> 1.عدد سنوات الدراسة:
+                                الكلية 4 سنوات دراسية.</p>
+                            <p>2. نوع الدراسة (عملي × نظري):
+
+                                <li>الأقسام الفنية والموسيقية: زي التربية الفنية، التربية الموسيقية، والإعلام التربوي، بيعتمدوا بشكل كبير على الشغل العملي، يعني هتشتغل بإيدك على مشاريع زي الرسم، النحت، العزف، التمثيل أو الإخراج.</li>
+                                
+                                <li>الأقسام النظرية: زي العلوم التربوية والنفسية، والتربية الخاصة، بتركز أكتر على المواد النظرية والمحاضرات، مع شوية تطبيق عملي.</li>
+                                
+                               <li> الأقسام المختلطة: زي تكنولوجيا التعليم والاقتصاد المنزلي، فيها توازن بين العملي والنظري (شغل على الكمبيوتر، تصميم وسائل، أو تطبيقات منزلية).</li></p>
+                            <p>3. نظام المحاضرات:
+
+                               <li>بتدرس مجموعة من المواد الأساسية (مشتركة بين كل الطلاب)، زي
+                                
+                               علم النفس التربوي. 
+                                
+                                   طرق التدريس.
+                                
+                              المناهج التعليمية.</li>
+                                
+                                
+                                <li>ومواد متخصصة في قسمك (مثلاً لو انت في قسم الموسيقى، هتدرس مواد زي العزف والغناء).</li></p>
+                                <p>4. نظام التقييم:
+
+                                    الأعمال الفصلية
+                                    
+                                    <li>في الأقسام العملية، فيه تقييم مستمر على المشاريع اللي بتعملها، زي اللوحات الفنية، العروض المسرحية، أو الوسائل التعليمية.
+                                    
+                                    في الأقسام النظرية، ممكن تطلب منك بحوث أو اختبارات قصيرة.</li>
+                                    
+                                    
+                                    الامتحانات النهائية:
+                                    
+                                  <li>  أغلب الأقسام بيكون فيها امتحانات نظرية آخر كل فصل دراسي.
+                                    
+                                    الأقسام العملية بيكون فيها امتحانات أداء (زي عرض مسرحي أو عزف على آلة).</li></p>
+                                    <p>5. التدريب العملي (التربية الميدانية)
+
+                                        <li>في السنة الثالثة أو الرابعة، كل الطلاب بيخرجوا تدريب ميداني في مدارس أو مراكز تعليمية.</li>
+                                        
+                                        <li>الهدف من التدريب إنك تطبق اللي اتعلمته في الكلية بشكل عملي وتتعامل مع الطلاب مباشرة.</li> </p>
+                                        <p>6. مشاريع التخرج:
+
+                                            في السنة الأخيرة (الرابعة)، لازم تقدم مشروع تخرج في تخصصك، زي:
+                                            
+                                            <li>التربية الفنية: تصميم لوحات أو مجسمات فنية.</li> 
+                                            
+                                            <li>التربية الموسيقية: أداء موسيقي أو أغنية.</li> 
+                                            
+                                           <li>الإعلام التربوي: إخراج مسرحية أو إعداد مجلة.</li> 
+                                            
+                                            <li>تكنولوجيا التعليم: تصميم برنامج تعليمي.</li> 
+                                            
+                                           <li>التربية الخاصة: إعداد خطة تعليمية لطلاب ذوي الاحتياجات الخاصة.</li> </p>
+                                           <p>7. مواد عامة لكل الأقسام:
+
+                                            بغض النظر عن تخصصك، فيه مواد عامة بتاخدها زي:
+                                            
+                                          <li> علم النفس التربوي: تفهم ازاي الطلاب بيتعلموا وإيه اللي بيأثر عليهم نفسيًا.</li> 
+                                            
+                                           <Li>أساليب التدريس: طرق مختلفة لتوصيل المعلومة للطلاب.</li> 
+                                            
+                                           <li>المناهج التعليمية: إزاي تصمم محتوى تعليمي يناسب أعمار الطلاب.</li> </p>
+                                           <p>8. نظام الحضور:
+
+                                           <li> الحضور مهم جدًا في الأقسام العملية لأن فيه شغل كتير بيعتمد على التدريب العملي.</li>
+                                            
+                                            <li>الأقسام النظرية فيها مرونة أكبر، لكن لازم تلتزم بنسبة الحضور المطلوبة عشان تتأهل للامتحانات.</li></p>
+                                            <p>9. فرص التخصص خلال الدراسة:
+
+                                                في بعض الأقسام ممكن تختار مجال فرعي داخل تخصصك، زي
+                                                
+                                                <li>في قسم الإعلام التربوي: تختار بين شعبة الصحافة أو المسرح.</li>
+                                                
+                                               <li> في قسم التربية الخاصة: تركز على إعاقة معينة زي التوحد أو الإعاقة السمعية.</li></p>
+                                               <p>10. طرق التدريس في الكلية:
+
+                                                <li>المحاضرات النظرية: لشرح المواد والأسس النظرية.</li>
+                                                
+                                                <li>الورش العملية: تطبيق عملي للمفاهيم زي الرسم، العزف، التصوير.</li>
+                                                
+                                               <li> المعامل: خاصة بأقسام زي تكنولوجيا التعليم لإعداد وسائل تعليمية.</li>
+                                                
+                                               <li> التدريب الميداني: نزول المدارس أو مراكز التدريب لتطبيق اللي اتعلمته.</li></p>
+                                            
+                        </div>
+                    
+                        <script>
+                            const studyBtn = document.getElementById('studyBtn');
+                            const studyContent = document.getElementById('studyContent');
+                    
+                            studyBtn.onclick = function() {
+                                if (studyContent.style.display === 'none' || studyContent.style.display === '') {
+                                    studyContent.style.display = 'block';  // إظهار المحتوى
+                                    studyBtn.innerHTML = 'رجوع';           // تغيير النص إلى "رجوع"
+                                } else {
+                                    studyContent.style.display = 'none';   // إخفاء المحتوى
+                                    studyBtn.innerHTML = 'تفاصيل الدراسة'; // إعادة النص إلى "تفاصيل الدراسة"
+                                }
+                            };
+                        </script>
+                    
+                    </body>
+                    </html>
+                    
+            
+        </section>
+        <section id="map">
+            <h2>خريطة الكلية</h2>
+            <!DOCTYPE html>
+            <html lang="ar">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>الخريطة</title>
+                <style>
+                    body {
+                        font-family: 'Arial', sans-serif;
+                        background-color: #f0f0f0;
+                        color: #333;
+                        padding: 20px;
+                    }
+
+                    .map {
+                        margin-top: 20px;
+                        background-color: #ffffff;
+                        padding: 20px;
+                        border-radius: 10px;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                        transition: all 0.3s ease;
+                    }
+
+                    .map:hover {
+                        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* تأثير الظل عند التمرير */
+                    }
+
+                    h3 {
+                        font-size: 2rem;
+                        color: #A64D79; /* اللون الجديد (#A64D79) */
+                        text-align: center;
+                        margin-bottom: 15px;
+                    }
+
+                    button {
+                        background-color: #A64D79; /* نفس اللون الجديد */
+                        color: white;
+                        padding: 10px 20px;
+                        border: none;
+                        border-radius: 5px;
+                        font-size: 1.1rem;
+                        cursor: pointer;
+                        transition: background-color 0.3s ease;
+                    }
+
+                    button:hover {
+                        background-color: #8B356C; /* درجة أغمق من اللون الجديد */
+                    }
+
+                    /* تنسيق صورة الخريطة */
+                    #mapImage {
+                        display: none; /* الصورة مخفية افتراضيًا */
+                        width: 100%;
+                        height: auto;
+                        border-radius: 10px;
+                        margin-top: 20px;
+                        transition: all 0.3s ease;
+                    }
+
+                </style>
+            </head>
+            <body>
+
+                <div class="map">
+                    <h3>الخريطة</h3>
+                    <!-- زر عرض الخريطة -->
+                    <button id="mapButton">عرض الخريطة</button>
+
+                    <!-- صورة الخريطة التي ستظهر عند الضغط -->
+                    <!-- استبدل الرابط أدناه برابط الصورة التي تريد عرضها -->
+                    <img id="mapImage" src="photo_2024-12-21_13-13-51-removebg-preview.png" alt="خريطة">
+                </div>
+
+                <script>
+                    const mapButton = document.getElementById('mapButton');
+                    const mapImage = document.getElementById('mapImage');
+
+                    // عند الضغط على زر "عرض الخريطة"
+                    mapButton.addEventListener('click', () => {
+                        if (mapImage.style.display === 'none') {
+                            mapImage.style.display = 'block'; // إظهار الصورة
+                            mapButton.textContent = 'إخفاء الخريطة'; // تغيير نص الزر
+                        } else {
+                            mapImage.style.display = 'none'; // إخفاء الصورة
+                            mapButton.textContent = 'عرض الخريطة'; // إعادة النص الأصلي للزر
+                        }
+                    });
+                </script>
+
+            </body>
+            </html>
+
+        </section>
+        <section id="success-tips">
+            <h2>نصائح للنجاح الأكاديمي</h2>
+            <!DOCTYPE html>
+            <html lang="ar">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>حبّة نصائح</title>
+                <style>
+                    body {
+                        font-family: 'Arial', sans-serif;
+                        background-color: #f0f0f0;
+                        color: #333;
+                        padding: 20px;
+                    }
+
+                    .tips {
+                        margin-top: 20px;
+                        background-color: #ffffff;
+                        padding: 20px;
+                        border-radius: 10px;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                        transition: all 0.3s ease;
+                    }
+
+                    .tips:hover {
+                        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* تأثير الظل عند التمرير */
+                    }
+
+                    h3 {
+                        font-size: 1.4rem;
+                        color: #A64D79; /* اللون الجديد (#A64D79) */
+                        text-align: center;
+                        margin-bottom: 15px;
+                    }
+
+                    button {
+                        background-color: #A64D79; /* نفس اللون الجديد */
+                        color: white;
+                        padding: 10px 20px;
+                        border: none;
+                        border-radius: 5px;
+                        font-size: 1.1rem;
+                        cursor: pointer;
+                        transition: background-color 0.3s ease;
+                    }
+
+                    button:hover {
+                        background-color: #8B356C; /* درجة أغمق من اللون الجديد */
+                    }
+
+                    /* تنسيق النص التفصيلي للنصائح */
+                    #tipsText {
+                        font-size: 1.2rem;
+                        line-height: 1.8;
+                        color: #555;
+                        margin-top: 20px;
+                        text-align: justify;
+                        transition: all 0.3s ease;
+                    }
+
+                    /* تأثير عند ظهور النص */
+                    #tipsText.hidden {
+                        opacity: 0;
+                        transform: translateY(20px);
+                    }
+
+                    #tipsText:not(.hidden) {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                </style>
+            </head>
+            <body>
+
+                <div class="tips">
+                    <h3>حبّة نصائح</h3>
+                    <!-- زر النصائح -->
+                    <button id="tipsButton">عرض النصائح</button>
+
+                    <!-- النص الذي سيظهر عند الضغط على زر "النصائح" -->
+                    <div id="tipsText" class="hidden">
+                        عشان تنجح في كلية التربية النوعية بجامعة عين شمس، ممكن تمشي على الخطوات دي بشكل بسيط:
+
+                       <p> <li>النصيحة الأولى:اعرف تخصصك كويس
+                            فهم طبيعة القسم اللي انت فيه (زي تربية فنية، موسيقية، إعلام تربوي، أو اقتصاد منزلي).
+                            ركز على الحاجات النظرية والعملية اللي بتخلي كليتك مختلفة عن غيرها.</li> </p>
+                        <p><li>النصيحة الثانية:نظم وقتك
+                            اعمل جدول أسبوعي يوزع وقتك بين المحاضرات، الأنشطة، والمذاكرة. 
+                            خليك فاكر إن المشاريع العملية بتاخد وقت ومجهود، فخصص ليها وقت كفاية. </li></p>
+                       <p> <li>النصيحة الثالثة:احضر والتزم
+                            حاول متفوتش المحاضرات والورش العملية عشان دي عليها درجات وبتفيدك في الفهم.
+                            سجل ملاحظاتك خلال المحاضرة عشان تسهل عليك المذاكرة بعدين.</li></p>
+                        <p><li>النصيحة الرابعة:طور مهاراتك العملية
+                            لو تخصصك فيه رسم، موسيقى، تصميم، أو إلقاء، اشتغل على تطوير نفسك فيه باستمرار.
+                            جرب تتعلم أدوات أو تقنيات جديدة تساعدك في شغلك العملي.</li></p>
+                       <p> <li>النصيحة الخامسة:تواصل مع الأساتذة وزمايلك
+                            اعمل علاقات كويسة مع دكاترتك وزمايلك، هيساعدوك بخبراتهم ونصايحهم.
+                            اتكلم مع طلاب من السنين اللي قبلك عشان تستفيد من تجربتهم.</li></P>
+                        <p><li>النصيحة السادسة:اشترك في الأنشطة الطلابية
+                            شارك في المعارض أو الحفلات أو أي نشاط مرتبط بتخصصك. ده هيقوي مهاراتك وهيزود خبرتك.</li></p>
+                        <p><li>النصيحة السابعة:ابحث وتعلم باستمرار
+                            دور على كتب أو فيديوهات مرتبطة بمجالك وتعلم حاجات جديدة.
+                            تابع كل جديد في تخصصك، سواء في التربية أو الفنون.</li></p>
+                        <p><li>النصحية الثامنة:ذاكر للامتحانات بذكاء
+                            ركز على النقاط المهمة اللي الدكتور أكد عليها في المحاضرة.
+                            حل امتحانات السنين اللي فاتت لو متوفرة، خاصة في المواد العملية.</li></p>
+                        <p><li>النصيحة التاسعة:طور مهاراتك في العرض والتقديم
+                            الكلية بتحتاج تعرض مشاريع كتير، فخليك جاهز تتكلم قدام الناس بثقة وبأسلوب بسيط وواضح.</li></p>
+                        <p><li>النصيحة العاشرة:اهتم بصحتك النفسية والجسدية
+                            حافظ على توازنك بين المذاكرة وحياتك الشخصية عشان متضغطش نفسك.
+                            اعمل رياضة خفيفة أو أي نشاط يريحك عشان تخفف التوتر.</li></p>
+                    </div>
+                </div>
+
+                <script>
+                    const tipsButton = document.getElementById('tipsButton');
+                    const tipsText = document.getElementById('tipsText');
+
+                    // عند الضغط على زر "عرض النصائح"
+                    tipsButton.addEventListener('click', () => {
+                        if (tipsText.classList.contains('hidden')) {
+                            tipsText.classList.remove('hidden');
+                            tipsButton.textContent = 'إخفاء النصائح'; // تغيير نص الزر
+                        } else {
+                            tipsText.classList.add('hidden');
+                            tipsButton.textContent = 'عرض النصائح'; // إعادة النص الأصلي للزر
+                        }
+                    });
+                </script>
+
+            </body>
+            </html>
+
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>زر العودة لأعلى</title>
+    <style>
+        /* تصميم الزر */
+        #backToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            display: none; /* مخفي في البداية */
+            font-size: 14px;
+        }
+        #backToTop:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!DOCTYPE html>
+    <html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>زر السهم</title>
+        <style>
+            /* تنسيق زر السهم */
+            #arrowButton {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                width: 50px;
+                height: 50px;
+                background-color: #A64D79;
+                color: white;
+                border: none;
+                border-radius: 50%;
+                font-size: 1.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+                transition: background-color 0.3s ease, transform 0.3s ease;
+            }
+
+            #arrowButton:hover {
+                background-color: #870f47;
+                transform: scale(1.2);
+            }
+        </style>
+    </head>
+    <body>
+        <!-- زر السهم -->
+        <button id="arrowButton" title="زر السهم">↑</button>
+
+        <script>
+            // عند النقر على زر السهم، نعود إلى أعلى الصفحة
+            document.getElementById('arrowButton').addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        </script>
+    </body>
+    </html>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hover Effect</title>
+<style>
+  .icon {
+    width: 100px; /* عرض الأيقونة */
+    height: 100px; /* ارتفاع الأيقونة */
+    background-image: url('icon.webp'); /* صورة الكتاب المغلق */
+    background-size: cover;
+    transition: background-image 0.3s ease; /* انتقال ناعم بين الصور */
+  }
+
+  .icon:hover {
+    background-image: url('icon.webp'); /* صورة الكتاب المفتوح عند الوقوف */
+  }
+</style>
+</head>
+<body>
+  <div class="icon"></div>
+</body>
+</html>
+<h2><font color="#A64D79" size="5px"> <p>عمل الطالبات:
+    <li>يوستينا زكريا شحاتة</li>
+   <li> فاطمة صلاح الدين السيد</li>
+   <li> مريم حزقيال القس هرمينا</li>
+         <li> مارينا جورج عريان</li>
+    <li>منه الله محمد عبد المنعم</li>
+    <li>ياسمين خالد اسماعيل</li>
+    <li>نوران فوزى محمود</li></p></font></h2>

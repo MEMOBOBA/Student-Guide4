@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3B1C32;
+    color: white;
+    padding: 1rem 0;
+    font-size: .95rem;
+}
+
+nav {
+    margin: 2rem auto;
+}
+
+.circle-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.circle-nav li a {
+    display:block;
+    width: 120px;
+    height: 120px;
+    background-color: #ddd;
+    border-radius: 50%;
+    line-height: 120px;
+    text-decoration:none;
+    color: #333;
+    transition: 0.5s;
+}
+
+.circle-nav li a:hover {
+    background-color: #A64D79;
+    color: white;
+    transform: scale(1.1);
+}
+
+section {
+    padding: 2rem;
+    border-bottom: 1px solid #ddd;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .circle-nav li a {
+        width: 100px;
+        height: 100px;
+        line-height: 90px;
+    }
+    img {
+      width: 300px;
+      height: 260px;
+    }
+
+}html {
+    scroll-behavior: smooth; /* حركة انتقال سلسة */
+}
+
+.circle-nav li a {
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: #ddd;
+    border-radius: 50%;
+    line-height: 120px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.2s ease, transform 2s ease; /* زمن التأخير للتأثير */
+}
+
+.circle-nav li a:hover {
+    background-color: #A64D79;
+    color: white;
+    transform: scale(1.1);
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
